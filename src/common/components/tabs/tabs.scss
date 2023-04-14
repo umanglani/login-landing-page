@@ -1,0 +1,43 @@
+@import "../../../styles/colors.scss";
+
+.tabs-container {
+
+    .tab-item {
+        color: $dark-gray;
+        margin: 0 20px;
+
+        &:hover {
+            transition: all 0.5 ease;
+            position: relative;
+
+            &:before {
+                border: 1px solid $app-fore-color;
+                content: "";
+                position: absolute;
+                width: 25px;
+                top: 30px;
+                left: calc(50% - 15px);
+            }
+        }
+    }
+
+    .tab-item:first-child {
+        margin-left: 0;
+    }
+
+    .tab-item.active {
+        color: white;
+        position: relative;
+        transition: all 0.5 ease;
+
+        &:before {
+            transition: all 0.5 ease;
+            border: 1px solid $app-fore-color;
+            content: "";
+            position: absolute;
+            width: 25px;
+            top: 30px;
+            left: calc(50% - 15px);
+        }
+    }
+}

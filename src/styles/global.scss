@@ -1,0 +1,214 @@
+@import "./colors.scss";
+@import "./mixins.scss";
+
+.flex-box-start, .flex-box-center, .flex-box-end {
+    display: flex;
+}
+
+.flex-box-center {
+    justify-content: center;
+}
+
+.flex-box-end {
+    justify-content: flex-end;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.v-baseline {
+    align-items: baseline;
+}
+
+.space-even {
+    justify-content: space-evenly;
+}
+
+.btn-rect-white, .btn-rect-green {
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+// widths
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.enable-hover {
+    cursor: pointer;
+}
+
+.overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+// fonts & colors -----------------------------------
+.big-title {
+    margin: 0;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 50px;
+}
+.app-title {
+    margin: 0;
+    font-family: 'Michroma';
+    font-size: 20px;
+}
+.app-sub-title {
+    font-weight: 200;
+    font-size: 18px;
+}
+.light {
+    font-weight: 200;
+}
+.small {
+    font-size: 13px;
+}
+
+.dark-gray {
+    color: $dark-gray;
+}
+
+.green {
+    color: $additional-link-text-color;
+}
+
+
+// alignments ---------------------------------------
+.text-center {
+    text-align: center;
+    justify-content: center;
+}
+
+.text-right {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+
+// buttons and links --------------------------------
+button {
+    cursor: pointer;
+    height: 50px;
+    font-size: inherit;
+
+    font-family: 'DM Sans';
+
+    border: 0;
+    border-radius: 4px;
+    text-align: left;
+
+    padding-left: 15px;
+
+    color: inherit;
+}
+
+.button-gradient {
+    background: $background-gradient;
+    color: black;
+}
+
+.button-border-gradient {
+
+    background-clip: padding-box;
+    border: solid  transparent;
+    margin: auto;
+    position: relative;
+    background: $app-back-color;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -4px;
+        border-radius: inherit;
+        background: $background-gradient;
+    }
+}
+
+// remove default css of a tag
+a {
+    outline: none;
+    // pointer-events: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+
+    color: inherit;
+
+    &:visited {
+        color: white;
+    }
+}
+
+a.underline {
+    text-decoration: underline;
+}
+
+.font-icon {
+    font-family: 'Material Icons';
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+input {
+    background-color: $input-background-color;
+    padding: 10px 15px;
+    height: 30px;
+    font-size: inherit;
+    border: none;
+    border-radius: 4px;
+    color: $app-fore-color;
+
+    outline: none;
+
+    &:focus {
+        outline: none;
+        pointer-events: none;
+    }
+
+    &::-webkit-input-placeholder {
+        opacity: 0.7;
+        color: $input-placeholder-text-color;
+    }
+}
+
+input.eye {
+    position: relative;
+    padding-right: 30px;
+
+
+}
+
+// extras -------------------------------------------
+.less-opacity {
+    opacity: 0.5;
+}
+
+.relative {
+    position: relative;
+}
+
+.alphabet-icon {
+    background-color: $additional-link-text-color;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

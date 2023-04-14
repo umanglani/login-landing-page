@@ -1,0 +1,67 @@
+@import "../styles/global.scss";
+$ele-max-width: 280px;
+
+
+.body-contents {
+    
+    .sub-text {
+        width: 35%;
+        padding-top: 10px;
+    }
+
+
+    .action-contents {
+        display: grid;
+        grid-template-columns: auto 150px auto;
+
+        padding-top: 75px;
+
+        align-items: baseline;
+    }
+
+
+    button {
+        width: $ele-max-width;
+        max-width: $ele-max-width;
+        margin-bottom: 15px;
+    }
+
+    input {
+        max-width: $ele-max-width;
+        margin-bottom: 15px;
+    }
+
+    .login-button, .signin-button {
+        svg {
+            position: absolute;
+            top: 17px;
+        }
+    }
+
+    .login-button {
+        svg {
+            right: 10px;
+        }
+    }
+
+    .signin-button {
+        padding-left: 45px;
+        svg {
+            top: 13px;
+            left: 10px;
+        }
+    }
+}
+
+.footer-contents {
+       
+    a, div {
+        width: 33.33%;
+    }
+
+    .social-icons {
+        svg {
+            padding: 0 10px;
+        }
+    }   
+}

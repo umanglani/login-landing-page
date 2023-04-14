@@ -1,0 +1,26 @@
+.app-header-container {
+    
+    width: 100%;
+    flex-direction: row;
+    flex-flow: wrap;
+
+    .left {
+        width: 30%;
+    }
+
+    .body {
+        width: 45%;
+    }
+
+    .right {
+        width: 25%;
+
+        > a:first-child {
+            margin-right: 25px;
+        }
+    }
+
+    .row-2 {
+        padding-top: 20px;
+    }
+}
